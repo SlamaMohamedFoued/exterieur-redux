@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/SlamaMohamedFoued/test.git/static/css/main.f6b7f38d.chunk.css",
+    "main.js": "/SlamaMohamedFoued/test.git/static/js/main.e44da20b.chunk.js",
+    "main.js.map": "/SlamaMohamedFoued/test.git/static/js/main.e44da20b.chunk.js.map",
+    "runtime-main.js": "/SlamaMohamedFoued/test.git/static/js/runtime-main.ec3944bf.js",
+    "runtime-main.js.map": "/SlamaMohamedFoued/test.git/static/js/runtime-main.ec3944bf.js.map",
+    "static/js/2.371e0ca8.chunk.js": "/SlamaMohamedFoued/test.git/static/js/2.371e0ca8.chunk.js",
+    "static/js/2.371e0ca8.chunk.js.map": "/SlamaMohamedFoued/test.git/static/js/2.371e0ca8.chunk.js.map",
+    "index.html": "/SlamaMohamedFoued/test.git/index.html",
+    "precache-manifest.d78fd13c79f4ddc4dc6b26e23fb7d349.js": "/SlamaMohamedFoued/test.git/precache-manifest.d78fd13c79f4ddc4dc6b26e23fb7d349.js",
+    "service-worker.js": "/SlamaMohamedFoued/test.git/service-worker.js",
+    "static/css/main.f6b7f38d.chunk.css.map": "/SlamaMohamedFoued/test.git/static/css/main.f6b7f38d.chunk.css.map",
+    "static/js/2.371e0ca8.chunk.js.LICENSE.txt": "/SlamaMohamedFoued/test.git/static/js/2.371e0ca8.chunk.js.LICENSE.txt",
+    "static/media/arrowRight.svg": "/SlamaMohamedFoued/test.git/static/media/arrowRight.4a534196.svg",
+    "static/media/bg.svg": "/SlamaMohamedFoued/test.git/static/media/bg.a0d3d329.svg",
+    "static/media/conseil.png": "/SlamaMohamedFoued/test.git/static/media/conseil.eb823f15.png",
+    "static/media/e-banner.svg": "/SlamaMohamedFoued/test.git/static/media/e-banner.7a44cb6f.svg",
+    "static/media/fans.svg": "/SlamaMohamedFoued/test.git/static/media/fans.37afca0f.svg",
+    "static/media/floor.svg": "/SlamaMohamedFoued/test.git/static/media/floor.13fb8502.svg",
+    "static/media/gamme1.png": "/SlamaMohamedFoued/test.git/static/media/gamme1.62abec4e.png",
+    "static/media/gamme2.png": "/SlamaMohamedFoued/test.git/static/media/gamme2.326b0b4b.png",
+    "static/media/gamme3.png": "/SlamaMohamedFoued/test.git/static/media/gamme3.c2dd3e29.png",
+    "static/media/gamme4.png": "/SlamaMohamedFoued/test.git/static/media/gamme4.d3cce891.png",
+    "static/media/gamme5.png": "/SlamaMohamedFoued/test.git/static/media/gamme5.4a639bb5.png",
+    "static/media/garden.png": "/SlamaMohamedFoued/test.git/static/media/garden.a55444c5.png",
+    "static/media/glass.svg": "/SlamaMohamedFoued/test.git/static/media/glass.efe1cacd.svg",
+    "static/media/ground.png": "/SlamaMohamedFoued/test.git/static/media/ground.6fd66313.png",
+    "static/media/manfloor.svg": "/SlamaMohamedFoued/test.git/static/media/manfloor.e4dfdbc7.svg",
+    "static/media/otherstar.svg": "/SlamaMohamedFoued/test.git/static/media/otherstar.3559ccb9.svg",
+    "static/media/stairs.svg": "/SlamaMohamedFoued/test.git/static/media/stairs.f014715a.svg",
+    "static/media/toolbox.svg": "/SlamaMohamedFoued/test.git/static/media/toolbox.6ccd7c9e.svg",
+    "static/media/tools.svg": "/SlamaMohamedFoued/test.git/static/media/tools.5fb363b1.svg",
+    "static/media/working.svg": "/SlamaMohamedFoued/test.git/static/media/working.8c63b696.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec3944bf.js",
+    "static/js/2.371e0ca8.chunk.js",
+    "static/css/main.f6b7f38d.chunk.css",
+    "static/js/main.e44da20b.chunk.js"
+  ]
+}
