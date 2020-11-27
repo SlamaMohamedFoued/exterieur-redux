@@ -67,6 +67,7 @@ input[type="text"] {
 
 .accueil {
   grid-area: accueil;
+  border-left: 1px solid #b7b7b7;
 }
 .boutique {
   grid-area: boutique;
@@ -120,6 +121,21 @@ input[type="text"] {
   /* padding: 18px; */
   text-align: center;
   border-width: 0;
+  border-bottom: 1px solid #b7b7b7;
+}
+.boutique_button_link {
+  text-decoration: none;
+}
+.boutique_button_link:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.boutique_button_link:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
 .boutique:hover {
   border-bottom: none;
