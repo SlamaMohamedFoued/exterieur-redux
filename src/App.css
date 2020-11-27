@@ -444,7 +444,7 @@ textarea {
 }
 .list_gammes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .gamme_block {
