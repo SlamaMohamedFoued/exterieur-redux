@@ -839,7 +839,7 @@ textarea {
   margin-bottom: -4px;
 }
 .magazin_desciption {
-  min-height: 420px;
+  min-height: 76%;
   max-height: 420px;
   min-width: 55%;
   max-width: 55%;
@@ -886,6 +886,15 @@ textarea {
 }
 .img_working {
   transition: all 0.3s;
+}
+.img_working_container {
+  min-height: 55%;
+  min-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.reali_image_container:hover .eStraight {
+  opacity: 1;
 }
 .magazin_informations_container:hover .eStraight {
   opacity: 1;
@@ -1398,6 +1407,11 @@ textarea {
   .products_banner_nav {
     top: 160px;
   }
+  .list_gammes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1417,6 +1431,9 @@ textarea {
   .espace_content:hover .green_bg {
     transform: translateY(-270px);
   }
+  .realisation_desciption_text {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 392px) {
   .espace_content {
@@ -1435,5 +1452,7 @@ textarea {
   .espace_content:hover .green_bg {
     transform: translateY(-320px);
   }
+}
+@media screen and (max-width: 345px) {
 }
 /*responsive end*/

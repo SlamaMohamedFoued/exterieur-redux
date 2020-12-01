@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import logo from "./images/logo.png";
-import loop from "./images/loop.png";
-import ground from "./images/ground.png";
-import map from "./images/map.png";
-import fans from "./images/fans.svg";
+import loop from "../../images/loop.png";
+import ground from "../../images/ground.png";
+import map from "../../images/map.png";
+import fans from "../../images/fans.svg";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {

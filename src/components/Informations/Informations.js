@@ -1,11 +1,11 @@
 import React from "react";
-import conseil from "./images/conseil.png";
-import floor from "./images/floor.svg";
-import tools from "./images/tools.svg";
-import stairs from "./images/stairs.svg";
-import manfloor from "./images/manfloor.svg";
-import otherstairs from "./images/otherstar.svg";
-import eStraight from "./images/eStraight.png";
+import conseil from "../../images/conseil.png";
+import floor from "../../images/floor.svg";
+import tools from "../../images/tools.svg";
+import stairs from "../../images/stairs.svg";
+import manfloor from "../../images/manfloor.svg";
+import otherstairs from "../../images/otherstar.svg";
+import eStraight from "../../images/eStraight.png";
 
 const Informations = () => {
   const data = [

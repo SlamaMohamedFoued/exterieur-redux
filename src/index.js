@@ -1,25 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import Main from "./components/Main/Main";
 import * as serviceWorker from "./serviceWorker";
-import NavBar from "./NavBar";
+import NavBar from "./components/Navbar/NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Store from "./store";
-import axios from "axios";
+import Store from "./components/Store/store";
+import store from "./store";
+import { Provider } from "react-redux";
 
-// axios.defaults.headers.common["X-FOO-BAR"] = "Origin";
-// axios.defaults.headers.common["X-Access-Token"] = "X-Access-Token";
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <div className="top_white"></div>
-      <NavBar />
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/store" component={Store} />
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div className="top_white"></div>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route path="/store" component={Store} />
+        </Switch>
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );

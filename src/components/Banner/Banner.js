@@ -1,7 +1,7 @@
 import React from "react";
-import eBanner from "./images/e-banner.svg";
-import toolbox from "./images/toolbox.svg";
-import arrowRight from "./images/arrowRight.svg";
+import eBanner from "../../images/e-banner.svg";
+import toolbox from "../../images/toolbox.svg";
+import arrowRight from "../../images/arrowRight.svg";
 
 function Banner() {
   return (

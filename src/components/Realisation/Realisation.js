@@ -1,6 +1,6 @@
 import React from "react";
-import garden from "./images/garden.png";
-import eStraight from "./images/eStraight.png";
+import garden from "../../images/garden.png";
+import eStraight from "../../images/eStraight.png";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import FiberManualRecordOutlinedIcon from "@material-ui/icons/FiberManualRecordOutlined";
 const Realisation = () => {

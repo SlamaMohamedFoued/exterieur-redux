@@ -1,8 +1,5 @@
 import React from "react";
-import fans from "./images/fans.svg";
-import e from "./images/e.png";
-
-import forward from "./images/forward.png";
+import fans from "../../images/fans.svg";
 const Espace = () => {
   return (
     <div className="espace">

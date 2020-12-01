@@ -1,7 +1,7 @@
 import React from "react";
-import glass from "./images/glass.svg";
-import working from "./images/working.svg";
-import eStraight from "./images/eStraight.png";
+import glass from "../../images/glass.svg";
+import working from "../../images/working.svg";
+import eStraight from "../../images/eStraight.png";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import FiberManualRecordOutlinedIcon from "@material-ui/icons/FiberManualRecordOutlined";
 const Magazin = () => {
@@ -13,7 +13,10 @@ const Magazin = () => {
           <img src={eStraight} alt="" className="eStraight" />
         </div>
         <div className="magazin_desciption">
-          <div>
+          <div
+          // className="img_working_container"
+          // style={{ backgroundImage: `url(${working})` }}
+          >
             <img
               src={working}
               alt=""

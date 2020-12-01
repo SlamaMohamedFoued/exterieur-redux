@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import img from "./images/gamme1.png";
-import gamme2 from "./images/gamme2.png";
-import gamme3 from "./images/gamme3.png";
-import gamme4 from "./images/gamme4.png";
-import gamme5 from "./images/gamme5.png";
+import img from "../../images/gamme1.png";
+import gamme2 from "../../images/gamme2.png";
+import gamme3 from "../../images/gamme3.png";
+import gamme4 from "../../images/gamme4.png";
+import gamme5 from "../../images/gamme5.png";
 
 const Gammes = () => {
   const gammes = [
@@ -33,7 +33,16 @@ const Gammes = () => {
     <div className="gammes">
       <div className="list_gammes">
         {gammes.map((el) => (
-          <div className="gamme">
+          <div
+            className="gamme"
+            style={
+              el.name === "Lame commposite"
+                ? { marginLeft: "0" }
+                : el.name === "Gabion"
+                ? { marginRight: "0" }
+                : {}
+            }
+          >
             <div className="gamme_block">
               <div
                 style={{
