@@ -1,0 +1,41 @@
+@import "../../colors";
+
+.categories_contanier {
+  min-height: 369px;
+  min-width: 260px;
+  margin-bottom: 30px;
+  /* border: 1px solid #b7b7b7; */
+}
+.categories_title {
+  min-height: 69px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.categories_title,
+.menu_item {
+  height: 60px;
+  line-height: 60px;
+}
+.menu_item_container,
+.categories_title_container,
+.menu_item_container_condition {
+  padding-left: 30px;
+  border: 1px solid $lightGray;
+  border-bottom: 0;
+}
+.menu_item_container_condition {
+  padding-left: 30px;
+  border: 1px solid $lightGray;
+}
+.menu_item_container_active {
+  background-color: $greenColor;
+  color: $LightGrey;
+}
+.menu_item_container_active > p {
+  font-weight: 700;
+}
+.menu_item_container_condition:hover,
+.menu_item_container:hover {
+  background-color: $greenColor;
+  color: white;
+}

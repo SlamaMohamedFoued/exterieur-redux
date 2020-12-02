@@ -1,0 +1,11 @@
+@import "../../colors";
+.store_container {
+  min-height: 300px;
+  padding-top: 20px;
+  display: flex;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: $LightGrey;
+  z-index: 99;
+  position: relative;
+}

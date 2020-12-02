@@ -1,0 +1,124 @@
+@import "../../colors";
+.infos {
+  padding: 150px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  position: relative;
+  width: 84%;
+  background-color: $veryLightGrey;
+}
+.notice,
+.conseil,
+.livraison,
+.magazin_info {
+  width: 100%;
+  height: 352px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.conseil,
+.livraison,
+.magazin_info {
+  color: white;
+}
+.notice {
+  background-color: $brownColor;
+  padding: 40px;
+}
+.notice:hover {
+  background-color: $greenColor;
+}
+.notice_content {
+  margin-top: 40px;
+}
+.notice_content > h2 {
+  margin-bottom: 35.5px;
+  font-size: 33px;
+  color: $greenColor;
+}
+.notice:hover .notice_content > h2 {
+  color: $brownColor;
+}
+
+.notice:hover .savoir_plus {
+  opacity: 1;
+}
+.notice_content > p {
+  font-size: 14px;
+  color: $white;
+  line-height: 1.9;
+}
+.notice_content,
+.savoir_plus {
+  transition: all 0.3s;
+}
+.savoir_plus {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  color: white;
+}
+.savoir_plus > p {
+  font-size: 16px;
+}
+.notice:hover .notice_content,
+.notice:hover .savoir_plus {
+  transform: translateY(-20px);
+}
+.info_img_container {
+  width: 100%;
+  height: 352px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.info_commun:hover .info_img_container {
+  transform: scale(1.1);
+  /* box-shadow: inset 0 0 0 100000px rgb(125, 175, 63, 0.9); */
+}
+.content_info {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  opacity: 0;
+  transition: all 0.4 s;
+}
+.content_info_arrow {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.info_commun:hover .content_info_arrow {
+  transform: translate(-50%, -40px);
+  opacity: 1;
+}
+.info_commun:hover .content_info {
+  opacity: 1;
+}
+.green_bar {
+  min-height: 8px;
+  background-color: $greenColor;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84%;
+}

@@ -1,0 +1,106 @@
+@import "../../colors";
+.realisation {
+  padding-left: 8%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 560px;
+  max-height: 560px;
+  position: relative;
+  background-color: $veryLightGrey;
+  overflow: hidden;
+}
+.realisation_title {
+  font-size: 33px;
+  margin-top: 12px;
+}
+.reali_image_container {
+  position: relative;
+  width: 74%;
+  overflow: hidden;
+}
+.garden_img {
+  min-width: 100%;
+  transition: all 0.3s;
+}
+.eStraight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  opacity: 0;
+}
+.realisation_desciption {
+  min-height: 425px;
+  max-width: 32%;
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45%);
+  left: 8%;
+  border: 1px solid $lightGray;
+  padding: 45px 37px;
+  box-sizing: border-box;
+}
+.realisation_desciption_title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.realisation_desciption_text {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.next_previous_rea {
+  background-color: $white;
+  transform: translateY(3px);
+  height: 100%;
+  /* width: 62px; */
+}
+.realisation_functionalities {
+  background-color: $white;
+  min-width: 124px;
+  max-width: 124px;
+  min-height: 62px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  border-top: 1px solid $lightGray;
+  border-left: 1px solid $lightGray;
+}
+
+.dots_rea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 80px;
+  display: flex;
+}
+.dot_green {
+  fill: $greenColor !important;
+}
+.dot_grey {
+  fill: $lightGray !important;
+}
+.realisation:hover .garden_img {
+  transform: scale(1.1);
+}
+
+.realisation:hover .realisation_desciption {
+  background-color: $greenColor;
+  color: $white;
+  border: none;
+}
+.realisation:hover .realisation_functionalities {
+  min-width: 244px;
+}
+.realisation:hover .dots_rea {
+  opacity: 1;
+}

@@ -1,0 +1,81 @@
+@import "../../colors";
+.espace_content {
+  min-height: 170px;
+  width: 84%;
+  /* background-color: #4d302b; */
+  position: relative;
+  overflow: hidden;
+  padding-left: 100px;
+  z-index: 4;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.espace {
+  min-height: 170px;
+  background-color: $veryLightGrey;
+  padding: 40px 0 80px 0;
+  position: relative;
+}
+.brown_bg {
+  min-height: 170px;
+  background: linear-gradient(
+    114deg,
+    rgba(77, 48, 43, 1) 0%,
+    rgba(101, 61, 54, 1) 100%
+  );
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
+}
+.green_bg {
+  min-height: 170px;
+  background: $greenColor;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.2s;
+}
+.espace_content:hover .brown_bg {
+  transform: translateY(-170px);
+}
+.espace_content:hover .green_bg {
+  transform: translateY(-170px);
+}
+.espace_content:hover .e_img_top,
+.espace_content:hover .e_img_bottom {
+  fill: #4d302b;
+}
+.next_img {
+  fill: white;
+  transition: all 0.3s;
+}
+.espace_content:hover .next_img {
+  transform: translateX(20px);
+}
+.espace_content_text {
+  color: $white;
+  width: 62%;
+}
+.espace_content_text > h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+.espace_content_text > p {
+  font-size: 20px;
+}
+.fans_espace {
+  margin-right: -40px;
+}
+.e_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

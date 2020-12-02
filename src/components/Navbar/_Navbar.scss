@@ -1,0 +1,336 @@
+@import "../../colors";
+.navbar {
+  width: 84%;
+  height: 117px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.55fr 0.45fr 0.25fr 0.75fr;
+  grid-template-rows: 1.2fr 50px;
+  grid-template-areas:
+    "logo search search magazin magazin configurateur"
+    "accueil boutique rea rea contact contact";
+  background-color: $white;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 8%;
+}
+.navbar > div,
+.navbar > p {
+  border-bottom: 1px solid $lightGray;
+  border-right: 1px solid $lightGray;
+  vertical-align: middle;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.logo {
+  grid-area: logo;
+}
+.logo_img {
+  grid-area: logo;
+  padding: 0px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 168px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+}
+
+.accueil {
+  grid-area: accueil;
+  border-left: 1px solid $lightGray;
+}
+.boutique {
+  grid-area: boutique;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+.boutique_links {
+  list-style: none;
+  padding-left: 0;
+  color: $white;
+  width: 100%;
+  height: 215px;
+  text-align: center;
+  padding-top: 9px;
+  box-sizing: border-box;
+}
+.boutique_links > li {
+  padding: 9px 0;
+  /* width: 156px; */
+}
+.boutique_link:hover {
+}
+.boutique_sub_menu {
+  position: absolute;
+  /* top: -100; */
+  /* min-height: 265px; */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  text-align: center !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -215px;
+  transition: all 0.2s;
+  z-index: 99;
+  /* opacity: 0; */
+}
+.boutique_button {
+  width: 100%;
+  font-size: 16px;
+  /* background-color: $greenColor; */
+  background-color: $white;
+  height: 50px;
+  /* color: #6f6c6c; */
+  /* padding: 18px; */
+  text-align: center;
+  border-width: 0;
+  border-bottom: 1px solid $lightGray;
+}
+.boutique_button_link {
+  text-decoration: none;
+}
+.boutique_button_link:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.boutique_button_link:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+.boutique:hover {
+  border-bottom: none;
+}
+.boutique:hover .boutique_sub_menu {
+  top: 0;
+}
+.boutique:hover .boutique_button {
+  color: $white;
+  background-color: $greenColor;
+}
+.hovered {
+  /* display: inline-block; */
+  position: relative;
+  background-color: $brownColor;
+}
+.hovered:after {
+  /* content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 156px;
+    height: 8px;
+    background: $greenColor;
+    z-index: -1; */
+}
+.rea {
+  grid-area: rea;
+}
+.contact {
+  grid-area: contact;
+  position: relative;
+  border-right: 0px;
+  text-align: left;
+  /* overflow-y: hidden; */
+}
+.configurateur {
+  grid-area: configurateur;
+  background-color: $greenColor;
+  color: $white;
+  display: flex;
+  font-weight: 500;
+  border-bottom: 0px solid $lightGray !important;
+  border-right: 0px solid $lightGray !important;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.configurateur_text {
+  font-weight: 400;
+  transition: all 0.3s;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.fans2 {
+  margin-right: -70px;
+  transition: all 0.3s;
+  width: 35px;
+  height: 24px;
+  opacity: 0;
+}
+.configurateur:hover .fans {
+  transform: translateX(-35px);
+  opacity: 0;
+}
+.configurateur:hover .fans2 {
+  transform: translateX(-35px);
+  opacity: 1;
+}
+.configurateur:hover p {
+  transform: translateX(-35px);
+}
+.configurateur:hover {
+  background-color: $brownColor;
+}
+.localisation {
+  grid-area: magazin;
+}
+.logo,
+.search,
+.localisation {
+  z-index: 100;
+  background-color: $white;
+  position: relative;
+}
+
+.magazin {
+  transition: all 0.2s;
+  margin-left: 10px;
+}
+.map,
+.map_2 {
+  transition: all 0.2s;
+}
+.map {
+  margin-left: -30px;
+}
+.map_2 {
+  opacity: 0;
+  margin-right: -50px;
+}
+.localisation:hover .magazin {
+  transform: translateX(-50px);
+}
+.localisation:hover .map {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.localisation:hover .map_2 {
+  opacity: 1;
+  transform: translateX(-10px);
+}
+
+.search {
+  grid-area: search;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.search_input {
+  width: 90%;
+  outline-style: none;
+  border: 0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+  padding-left: 15px;
+  transition: all 0.3s;
+  margin-left: 40px;
+}
+.loop_search_left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px 15px;
+  min-width: 20px;
+  transition: all 0.3s;
+}
+.search:hover .loop_search_left {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.search:hover .search_input {
+  transform: translateX(-10px);
+}
+.loop_search_right {
+  padding-right: 10px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.2s;
+}
+.search:hover .loop_search_right {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.fans {
+  transition: all 0.3s;
+  margin-left: -31px;
+  width: 35px;
+  height: 24px;
+}
+.form_text > p {
+  color: $brownColor;
+  font-size: 12px;
+  font-weight: 500;
+}
+.contact_content {
+  transition: all 0.2s;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: -87vh;
+  background-color: $white;
+}
+.form_text {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.form_inputs[type="text"] {
+  font-size: 12px;
+}
+.form_inputs {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-bottom: 1px solid $lightGray;
+  color: $lightGray;
+  width: 100%;
+  padding: 10.5px 0;
+  margin: 10px 0;
+}
+.contact:hover .contactez_nous {
+  /* height: 585px; */
+  opacity: 0;
+}
+.contact:hover .contact_content {
+  top: 0;
+}
+textarea {
+  height: 81px;
+  width: 100%;
+  border: 1px solid $lightGray;
+  margin-top: 10px;
+  border-radius: 6px;
+  resize: none;
+}
+.textarea_label {
+  color: $lightGray;
+}
+.send_button {
+  width: 100%;
+  font-size: 16px;
+  background-color: $greenColor;
+  color: $white;
+  padding: 18px;
+  text-align: center;
+  border-width: 0;
+}

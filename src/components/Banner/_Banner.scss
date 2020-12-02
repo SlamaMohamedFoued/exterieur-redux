@@ -1,0 +1,30 @@
+@import "../../colors";
+
+.banner_container {
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 478px;
+  padding: 28px 21px;
+  background-color: $brownColor;
+  position: relative;
+  overflow: hidden;
+}
+.configurer {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 21px;
+  color: white;
+}
+.configurer_desc {
+  color: $white;
+}
+.arrow_right {
+  position: absolute;
+  bottom: 32px;
+  right: 34.5px;
+}
+.e_banner {
+  position: absolute;
+  bottom: -7px;
+  left: -53px;
+}

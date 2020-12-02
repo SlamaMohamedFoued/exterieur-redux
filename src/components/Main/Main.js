@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "../../App.scss";
 import BgMain from "../BgMain/BgMain";
 import Gammes from "../Gammes/Gammes";
 import Espace from "../Espace/Espace";
@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 import Magazin from "../Magazin/Magazin";
 function Main() {
   return (
-    <div className="App">
+    <div>
       <BgMain />
       <Gammes />
       <Espace />

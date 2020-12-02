@@ -1,0 +1,105 @@
+@import "../../colors";
+.magazin_informations {
+  padding-right: 8%;
+  padding-bottom: 150px;
+  /* margin-bottom: -4px; */
+  /* justify-content: space-between; */
+  /* min-height: 560px;
+    max-height: 560px; */
+  position: relative;
+  background-color: $veryLightGrey;
+  overflow: hidden;
+}
+.magazin_informations_container {
+  display: flex;
+  position: relative;
+  background-color: $veryLightGrey;
+  overflow: hidden;
+}
+.magazin_title {
+  font-size: 33px;
+  /* margin-top: 5px; */
+  margin-left: 40px;
+}
+.magazin_image_container {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+  margin-bottom: -4px;
+}
+.magazin_desciption {
+  min-height: 76%;
+  max-height: 420px;
+  min-width: 55%;
+  max-width: 55%;
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-47%);
+  right: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid $lightGray;
+}
+.realisation_desciption_title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.magazin_desciption_text {
+  font-size: 14px;
+  line-height: 1.9;
+  padding: 31px 44px 200px;
+  border: 1px solid $lightGray;
+  border-bottom: 0;
+  margin-top: -5px;
+  position: relative;
+  background-color: white;
+  transition: all 0.3s;
+}
+.glass_img {
+  min-width: 100%;
+  transition: all 0.3s;
+}
+.magazin_savoir_plus {
+  color: #7daf3f;
+}
+.magazin_description_savoir_plus {
+  position: absolute;
+  bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.img_working {
+  transition: all 0.3s;
+}
+.img_working_container {
+  min-height: 55%;
+  min-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.reali_image_container:hover .eStraight {
+  opacity: 1;
+}
+.magazin_informations_container:hover .eStraight {
+  opacity: 1;
+}
+.magazin_informations_container:hover .glass_img {
+  transform: scale(1.1);
+}
+.magazin_desciption:hover .magazin_desciption_text {
+  transform: translateY(-100px);
+  min-height: 150%;
+  padding: 31px 44px 157px;
+}
+.magazin_desciption:hover .magazin_description_savoir_plus {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+.magazin_desciption:hover .img_working {
+  transform: translateY(-50px);
+}

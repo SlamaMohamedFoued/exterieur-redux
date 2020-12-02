@@ -1,0 +1,23 @@
+@import "../../colors";
+.products_banner {
+  min-height: 230px;
+  background-color: #4d302b;
+  padding-top: 130px;
+  padding-left: 8%;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.products_banner_title {
+  color: #7daf3f;
+  font-size: 47px;
+  position: fixed;
+}
+.products_banner_nav {
+  position: fixed;
+  color: white;
+  top: 193px;
+}

@@ -1,0 +1,43 @@
+@import "../../colors";
+.footer {
+  padding: 49px 8%;
+  background-color: $white;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 0.9fr 0.9fr;
+  grid-gap: 10px;
+}
+.footer_headers {
+  font-size: 18px;
+  margin-bottom: 29px;
+  font-weight: 500;
+}
+.footer_infos {
+  margin-bottom: 12px;
+  color: $grayColor;
+}
+.contact_title {
+  color: #1f1f1f;
+  margin-bottom: 10px;
+}
+.footer_infos_contact {
+  margin-bottom: 10px;
+  color: $grayColor;
+  white-space: pre-line;
+}
+.horaires {
+  display: flex;
+  align-items: center;
+  color: $grayColor;
+  margin-bottom: 10px;
+}
+.days {
+  margin-bottom: 10px;
+}
+.additional_info {
+  font-size: 11px;
+}
+.clock {
+  margin-right: 13px;
+  padding: 2px;
+}
