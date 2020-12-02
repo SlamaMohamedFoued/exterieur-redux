@@ -46,7 +46,9 @@ const NavbarHamb = () => {
             className="realisation_hamburger_menu hamburger_menu_item"
             onClick={() => setShow(!show)}
           >
-            Nos Réalisations
+            <Link to="/users" className="accueil_hamburger_menu_link">
+              Nos Réalisations
+            </Link>
           </p>
           <p
             className="magazin_hamburger_menu hamburger_menu_item"

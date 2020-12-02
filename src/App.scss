@@ -35,6 +35,10 @@
     background-repeat: no-repeat;
     bottom: -100px;
   }
+  .bg_main {
+    background-size: auto 40%;
+    background-position: unset;
+  }
 }
 @media screen and (max-width: 1420px) {
   .magazin_image_container {
