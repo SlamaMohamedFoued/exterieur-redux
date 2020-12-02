@@ -6,7 +6,9 @@ import * as serviceWorker from "./serviceWorker";
 import NavBar from "./components/Navbar/NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Store from "./components/Store/store";
+import Users from "./components/users/Users";
 import store from "./store";
+
 import { Provider } from "react-redux";
 
 ReactDOM.render(
@@ -18,6 +20,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={Main} />
           <Route path="/store" component={Store} />
+          <Route path="/users" component={Users} />
         </Switch>
       </Router>
     </Provider>

@@ -1,6 +1,5 @@
 import React from "react";
 import bgAccueil from "../../images/bg.svg";
-
 const BgMain = () => {
   return (
     <div

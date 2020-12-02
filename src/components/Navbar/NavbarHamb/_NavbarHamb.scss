@@ -1,0 +1,41 @@
+@import "../../../colors";
+.navbar_hamburger {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  transition: all 0.2s;
+}
+.hamburger_menu {
+  position: absolute;
+  text-align: left;
+  width: 85%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  z-index: 100;
+  -webkit-box-shadow: 6px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 6px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.accueil_hamburger_menu_link {
+  text-decoration: none;
+}
+.accueil_hamburger_menu_link:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.accueil_hamburger_menu_link:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+.hamburger_menu_item {
+  //   min-height: 60px;
+  font-size: 20px;
+  padding: 20px 0 20px 20px;
+  border: 2px solid $lightGray;
+  border-top: 0;
+}

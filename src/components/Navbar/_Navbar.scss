@@ -104,16 +104,19 @@ input[type="text"] {
   border-width: 0;
   border-bottom: 1px solid $lightGray;
 }
-.boutique_button_link {
+.boutique_button_link,
+.rea_link {
   text-decoration: none;
 }
-.boutique_button_link:link {
+.boutique_button_link:link,
+.rea_link:link {
   text-decoration: inherit;
   color: inherit;
   cursor: pointer;
 }
 
-.boutique_button_link:visited {
+.boutique_button_link:visited,
+.rea_link:visited {
   text-decoration: inherit;
   color: inherit;
   cursor: auto;

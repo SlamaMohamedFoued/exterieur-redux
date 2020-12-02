@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, USE } from "react";
 import "../../App.scss";
 import BgMain from "../BgMain/BgMain";
 import Gammes from "../Gammes/Gammes";

@@ -3,13 +3,15 @@ import garden from "../../images/garden.png";
 import eStraight from "../../images/eStraight.png";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import FiberManualRecordOutlinedIcon from "@material-ui/icons/FiberManualRecordOutlined";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const Realisation = () => {
   return (
     <div className="realisation">
       <h2 className="realisation_title">Nos réalisations</h2>
 
       <div className="reali_image_container">
-        <img src={garden} alt="" className="garden_img" />
+        {/* <img src={garden} alt="" className="garden_img" /> */}
+        <LazyLoadImage src={garden} alt="" className="garden_img" />
         <img src={eStraight} alt="" className="eStraight" />
       </div>
       <div className="realisation_desciption">
